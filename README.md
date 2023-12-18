@@ -2,7 +2,7 @@
 
 ## Method
 
-![](figures/method.png)
+![](figures/method.jpg)
 
 Key steps of our T-SciQ approach. T-SciQ consists of three stages: (i) generating teaching data; (ii) mixing teaching data by policy; and (iii) fine-tuning.
 
