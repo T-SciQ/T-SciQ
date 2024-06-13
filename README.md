@@ -17,7 +17,6 @@ Extensive experimental results show that our T-SciQ method achieves a new state-
 ### Install
 
 ```
-git clone https://github.com/amazon-science/mm-cot
 cd mm-cot
 pip install -r requirements.txt
 ```
@@ -30,7 +29,7 @@ Download the dataset from the following repository:
 https://github.com/lupantech/ScienceQA/tree/main/data
 ```
 
-Download the extracted vision features from [vision_features](https://drive.google.com/file/d/13B0hc_F_45-UlqPLKSgRz-ALtFQ8kIJr/view?usp=share_link) and unzip the files under `vision_features`
+Download the extracted vision features from [vision_features](https://drive.google.com/file/d/13B0hc_F_45-UlqPLKSgRz-ALtFQ8kIJr/view?usp=share_link) and unzip the files under `mm-cot/vision_features`
 
 ### Checkpoint
 https://drive.google.com/file/d/1sQCntydj4ioDYlFOlO1WHLnrIbjQElQE/view?usp=drive_link
@@ -58,6 +57,8 @@ CUDA_VISIBLE_DEVICES=0,1 python main.py \
 ### Inference
 
 ```
+cd mm-cot
+
 # rationale generation
 CUDA_VISIBLE_DEVICES=0,1 python main.py \
     --model allenai/unifiedqa-t5-base \
